@@ -60,7 +60,7 @@ def main():
             commit_msg = input("✍️ Enter commit message (or press enter to skip): ").strip()
             if commit_msg:
                 push_if_changed(commit_msg)
-            time.sleep(10)  # ১০ সেকেন্ড পরপর চেক করবে
+            time.sleep(0)  # ১০ সেকেন্ড পরপর চেক করবে
     else:
         print("⚠️ No Git repository found.")
         remote_url = input("🔗 Enter your remote Git repository URL: ").strip()
